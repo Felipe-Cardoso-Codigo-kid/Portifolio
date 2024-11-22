@@ -1,10 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+    --cor-fundo: black;
+    --cor-texto: white;
+
+    --fonte: "Sour Gummy", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background-color: black;
-    color: white;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+.sobre_mim{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+
+.sobre_mim_conteudo h1,
+.sobre_mim_conteudo p,
+.sobre_mim_conteudo ul {
+    margin-bottom: 20px; /* Espaçamento entre os elementos */
+}
+
+.sobre_mim_conteudo {
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 800px;
+}
+
+h1 {
+    font-size: 37px;
 }
 
 .fonte {
-    font-family: "Sour Gummy", sans-serif;
+    font-family: var(--fonte);
+}
+
+ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+p {
+    font-size: 24px;
+}
+
+.imagem{
+    width: 42%;
 }
